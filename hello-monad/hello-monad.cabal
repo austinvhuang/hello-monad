@@ -33,3 +33,17 @@ executable state
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5
                     , mtl >= 2.2.2
+
+executable ioref
+  hs-source-dirs:      src
+  main-is:             IORef.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                    , mtl >= 2.2.2
+
+executable st
+  hs-source-dirs:      src
+  main-is:             ST.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                    , mtl >= 2.2.2
