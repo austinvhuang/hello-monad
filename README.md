@@ -1,3 +1,3 @@
 # Monads by Trivial Examples
 
-"Just show my how the types line up."
+"Just show me how the types line up."
