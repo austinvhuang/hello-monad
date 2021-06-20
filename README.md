@@ -1,4 +1,4 @@
-# Hello Monad: Trivial Monad Examples
+# Trivial Monad Examples
 
 *"Just show me how the types line up."*
 
