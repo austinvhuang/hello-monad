@@ -10,13 +10,11 @@ The biggest barrier for beginners sometimes is just to see how the types line up
 
 # Running Examples
 
-These examples require [stack](https://docs.haskellstack.org/en/stable/README/).
-
-Run using
+These examples require [stack](https://docs.haskellstack.org/en/stable/README/). Run using:
 
 `stack run [x]`
 
-where `[x]` can be `reader`, `writer`, `state`, `ioref`, `st`.
+`[x]` can be `reader`, `writer`, `state`, `ioref`, or `st`. See the [cabal file](hello-monad.cabal) for details.
 
 # Contributions
 
