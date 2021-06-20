@@ -5,10 +5,9 @@ version:             0.1.0.0
 homepage:            https://github.com/githubuser/hello-monad#readme
 license:             BSD3
 license-file:        LICENSE
-author:              Author name here
-maintainer:          example@example.com
-copyright:           2021 Author name here
-category:            Web
+author:              Austin Huang
+copyright:           2021 Austin Huang
+category:            Tutorial
 build-type:          Simple
 cabal-version:       >=1.10
 extra-source-files:  README.md
@@ -18,32 +17,32 @@ executable reader
   main-is:             Reader.hs
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5
-                    , mtl >= 2.2.2
+                     , mtl >= 2.2.2
 
 executable writer
   hs-source-dirs:      src
   main-is:             Writer.hs
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5
-                    , mtl >= 2.2.2
+                     , mtl >= 2.2.2
 
 executable state
   hs-source-dirs:      src
   main-is:             State.hs
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5
-                    , mtl >= 2.2.2
+                     , mtl >= 2.2.2
 
 executable ioref
   hs-source-dirs:      src
   main-is:             IORef.hs
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5
-                    , mtl >= 2.2.2
+                     , mtl >= 2.2.2
 
 executable st
   hs-source-dirs:      src
   main-is:             ST.hs
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5
-                    , mtl >= 2.2.2
+                     , mtl >= 2.2.2
