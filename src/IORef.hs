@@ -9,4 +9,4 @@ main = do
   addOne x
   addOne x
   x' <- readIORef x
-  print x'
+  print x' -- prints 3

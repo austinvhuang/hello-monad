@@ -10,5 +10,5 @@ stTest = do
   readSTRef x
 
 main = do
-  let x = runST stTest
-  print x
+  let x = runST stTest :: Int
+  print x -- prints 1
