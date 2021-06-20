@@ -9,14 +9,14 @@ data Config = Config {
 getConfig :: IO Config
 getConfig = pure Config { count=1 }
 
-doReader :: Int -> Reader Config Int
-doReader increment = do
+incrementBy :: Int -> Reader Config Int
+incrementBy increment = do
   cnt <- asks count
   pure $ cnt + increment
 
 main :: IO ()
 main = do
   config <- getConfig
-  let value = runReader (doReader 3) config
-  print config
-  print value
+  let value = runReader (incrementBy 3) config
+  print config -- prints Config {count = 1}
+  print value -- prints 4

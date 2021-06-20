@@ -12,15 +12,13 @@ doWriter1 content = do
   
 doWriter2 :: String -> Writer String ()
 doWriter2 content = do
+  tell "appending:\n"
   tell content
-  tell "foo\n"
-  tell "bar\n"
-  tell "baz\n"
   
 doBoth :: Writer String ()
 doBoth = do
   doWriter1 "hello\n"
-  doWriter2 "hi\n"
+  doWriter2 "bye\n"
 
 main :: IO ()
 main = do
