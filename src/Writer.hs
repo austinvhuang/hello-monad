@@ -3,8 +3,6 @@ module Main where
 import Data.Monoid ((<>))
 import Control.Monad.Writer
 
-newtype Log = Log { logContent :: String }
-
 doWriter1 :: String -> Writer String ()
 doWriter1 content = do
   tell "log start:\n"
@@ -22,6 +20,5 @@ doBoth = do
 
 main :: IO ()
 main = do
-  let initial = Log ""
   let (_, value) = runWriter doBoth
   putStrLn value
